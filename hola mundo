@@ -29,16 +29,19 @@ int main()
     // tse = mintoseg + segundos + centtoseg
     mintoseg = minutos*60;
     centtoseg = centesimas/100;
-    tse = mintoseg + segundos + centtoseg;
 
-    //printf("la velocidad es: %f",tse);//aqui ya jala el tiempo en segundos
+    tse = mintoseg + segundos + centtoseg;//esta se debe mostrar
 
-    velocidadms = distancia/tse;
+    velocidadms = distancia/tse;//esta se debe mostra    
+    velocidadkh = velocidadms*3600/1000;//esta se debe mostrar
 
-    //printf("tu velocidad en m/s: %f", velocidadms); esto es la velocidad en m/s 
-    
-    velocidadkh = velocidadms*3600/1000;
-    //printf("tu velocidad en km/h es: %f", velocidadkh);
+    printf("===========================================\n");
+    printf("tus resultados son: \n");
+    printf("tu tiempo fue de: %f s \n", tse);
+    printf("tu velocidad en m/s es: %f m/s \n", velocidadms);
+    printf("tu velocidad en km/h es: %f km/h \n", velocidadms);
+    printf("===========================================\n");
+
 
     return 0;
 }
