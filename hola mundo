@@ -31,7 +31,14 @@ int main()
     centtoseg = centesimas/100;
     tse = mintoseg + segundos + centtoseg;
 
-    printf("la velocidad es: %f",tse);
+    //printf("la velocidad es: %f",tse);//aqui ya jala el tiempo en segundos
+
+    velocidadms = distancia/tse;
+
+    //printf("tu velocidad en m/s: %f", velocidadms); esto es la velocidad en m/s 
+    
+    velocidadkh = velocidadms*3600/1000;
+    //printf("tu velocidad en km/h es: %f", velocidadkh);
 
     return 0;
 }
