@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int distancia= 0;
+    int minutos = 0;
+    int segundos = 0;
+    int centesimas = 0;
+    
+    float pasaraminutos = 0;
+    float velocidadms = 0;
+    float velocidadkh = 0;
+
+    printf("===========================================\nhola usuario, te voy a ayudar a calcular la velocidad de unos corredores\n");
+    printf("ingresa la distancia en...");
+    scanf("%d",distancia);
+    printf("ingresa el tiempo inicia colocando los minutos");
+    scanf("%d",minutos);
+    printf("ahora los segundos");
+    scanf("%d",segundos);
+    printf("y por ultimo las centesimas");
+    scanf("%d",centesimas);
+
+    return 0;
+}
