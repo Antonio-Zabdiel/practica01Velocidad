@@ -8,19 +8,30 @@ int main()
     int segundos = 0;
     int centesimas = 0;
     
-    float pasaraminutos = 0;
-    float velocidadms = 0;
-    float velocidadkh = 0;
+    float mintoseg = 0.0;
+    float centtoseg = 0.0;
+
+    float tse = 0.0;//tiempo en segundos
+    float velocidadms = 0.0;
+    float velocidadkh = 0.0;
 
     printf("===========================================\nhola usuario, te voy a ayudar a calcular la velocidad de unos corredores\n");
-    printf("ingresa la distancia en...");
-    scanf("%d",distancia);
-    printf("ingresa el tiempo inicia colocando los minutos");
-    scanf("%d",minutos);
-    printf("ahora los segundos");
-    scanf("%d",segundos);
-    printf("y por ultimo las centesimas");
-    scanf("%d",centesimas);
+    printf("ingresa la distancia en metros: ");
+    scanf("%d",&distancia);
+    printf("ingresa el tiempo inicia colocando los minutos: ");
+    scanf("%d",&minutos);
+    printf("ahora los segundos: ");
+    scanf("%d",&segundos);
+    printf("y por ultimo las centesimas: ");
+    scanf("%d",&centesimas);
+
+    //tse = minutos*60+segundos+centesimas/100;
+    // tse = mintoseg + segundos + centtoseg
+    mintoseg = minutos*60;
+    centtoseg = centesimas/100;
+    tse = mintoseg + segundos + centtoseg;
+
+    printf("la velocidad es: %f",tse);
 
     return 0;
 }
